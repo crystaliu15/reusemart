@@ -2,7 +2,18 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.1" }
+        "api/index.php": { "runtime": "vercel-php@0.7.1",
+    "includedFiles": [
+        "bootstrap/**",
+        "config/**",
+        "public/**",
+        "resources/**",
+        "routes/**",
+        "storage/**",
+        "vendor/**",
+        ".env"
+      ]
+    }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
@@ -26,7 +37,7 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "DB_CONNECTION": "mysql",
-        "DB_HOST": "127.0.0.1",
+        "DB_HOST": "4gg.h.filess.io",
         "DB_PORT": "3306",
         "DB_DATABASE": "reusemart",
         "DB_USERNAME": "reusemart"
