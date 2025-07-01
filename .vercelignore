@@ -17,9 +17,6 @@ storage/framework/*
 # Laravel tests
 tests
 
-# Build assets (jika tidak dibutuhkan serverless)
-public/build
-
 # Vite cache
 .vite
 .vitepress
