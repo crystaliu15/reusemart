@@ -1,1 +1,10 @@
-/vendor
+node_modules
+tests
+storage/logs
+storage/framework/sessions
+storage/framework/testing
+.env.example
+.DS_Store
+*.log
+*.sqlite
+/public/storage
