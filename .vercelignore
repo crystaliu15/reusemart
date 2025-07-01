@@ -1,33 +1,32 @@
+# Umum
 node_modules
-vendor/bin
-vendor/composer/*
-!vendor/composer/installed.json
-tests
-.phpunit.result.cache
-
-storage/*
-!storage/app/public
-!storage/framework/cache/data
-!storage/framework/views
-
-storage/logs
-storage/framework/sessions
-storage/framework/testing
-storage/debugbar
-storage/temp
-storage/*.log
-
+vendor
+storage
 .env
-.env.*
 .env.example
 *.log
 *.sqlite
-*.sqlite3
-*.bak
-*.tmp
 .DS_Store
-Thumbs.db
 
-/public/storage
-/public/mix-manifest.json
-/public/hot
+# Laravel cache/temp files
+bootstrap/cache
+storage/logs
+storage/framework/*
+!storage/framework/.gitignore
+
+# Laravel tests
+tests
+
+# Build assets (jika tidak dibutuhkan serverless)
+public/build
+
+# Vite cache
+.vite
+.vitepress
+vite.config.js
+vite.config.ts
+
+# PHP config cache files (temp)
+*.php~
+*.cache
+*.tmp
